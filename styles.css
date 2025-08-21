@@ -257,50 +257,40 @@ label{
   gap: 24px;
 }
 
-@media (max-width: 549px) {
-  .topbar{
-    grid-template-columns: auto 1fr auto;
-  }
-  .brand{
-    display: none;
-  }
-  .actions{
-    gap:8px;
-  }
-  .search{
-    display: none;
-  }
-  .search-mobile{
-    display: flex;
-    flex: 1;
-    margin-right: 12px;
-  }
-  .product{
-    grid-template-columns: 1fr;
-  }
-  .form > div:nth-child(1){
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
+@media (max-width: 900px){
+  .topbar{ grid-template-columns: 1fr; }
+  .actions{ justify-self:start; }
+  .product{ grid-template-columns: 1fr; }
 }
 
-@media (min-width: 550px) and (max-width: 1099px) {
-  .topbar{
-    grid-template-columns: 1fr auto auto;
-    gap: 20px;
-  }
-  .search{
-    flex: 1;
-  }
-  .product{
-    grid-template-columns: 1fr 1.2fr;
-  }
-  .form{
-    grid-template-columns: 1fr 1fr;
-  }
-  .form > div:nth-child(1){
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    gap:12px;
-  }
+.table{
+  width:100%;
+  border-collapse: collapse;
+  background: var(--card);
+  border-radius: 16px;
+  overflow:hidden;
+  box-shadow: var(--shadow);
+}
+
+.table th, .table td{
+  padding: 14px 12px;
+  border-bottom: 1px solid rgba(0,0,0,.06);
+  text-align: left;
+}
+
+.table th{
+  background: #fff;
+  color: var(--green);
+}
+
+tfoot td{ font-weight: 800; }
+
+.footer{
+  margin-top: 40px;
+  padding: 28px;
+  background: var(--green);
+  color:#fff;
+  text-align:center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
