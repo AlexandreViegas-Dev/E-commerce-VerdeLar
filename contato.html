@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Contato · VerdeLar</title>
+<link rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<header class="header">
+  <div class="topbar">
+    <a class="brand" href="index.html" aria-label="Ir para a página inicial">
+      <div class="logo"><img src="logo verdelar.png"></div><span>VerdeLar</span>
+    </a>
+    <form class="search" action="busca.html">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="11" cy="11" r="7" stroke-width="2"/><path d="M21 21l-3.5-3.5" stroke-width="2"/></svg>
+      <input name="q" placeholder="Buscar produtos, marcas e categorias"/>
+    </form>
+    <div class="actions">
+      <a class="icon-btn" href="pedidos.html" title="Pedidos">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M6 6h15l-1.5 9h-13z" stroke-width="2"/><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/></svg>
+      </a>
+      <a class="icon-btn" href="cadastro.html" title="Entrar / Cadastrar">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor"><circle cx="12" cy="7" r="4" stroke-width="2"/><path d="M4 21c2-4 6-6 8-6s6 2 8 6" stroke-width="2"/></svg>
+      </a>
+    </div>
+  </div>
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html">Início</a>
+      <a href="grade.html">Todos os produtos</a>
+      <a href="quem-somos.html">Quem somos</a>
+      <a href="contato.html">Contato</a>
+      <a href="pedidos.html">Pedidos</a>
+    </div>
+  </nav>
+</header>
+<main class="container">
+
+  <h1 class="section-title">Fale conosco</h1>
+  <form class="form card" action="#" method="post">
+    <div>
+      <label for="nome">Nome</label>
+      <input class="input" id="nome" name="nome" required placeholder="Seu nome completo"/>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px">
+      <div>
+        <label for="email">E-mail</label>
+        <input class="input" id="email" type="email" name="email" required placeholder="voce@exemplo.com"/>
+      </div>
+      <div>
+        <label for="assunto">Assunto</label>
+        <select id="assunto" class="input" name="assunto">
+          <option>Dúvidas</option><option>Trocas e Devoluções</option><option>Parcerias</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <label for="msg">Mensagem</label>
+      <textarea id="msg" name="mensagem" placeholder="Como podemos ajudar?"></textarea>
+      <p class="help">Respondemos em até 1 dia útil.</p>
+    </div>
+    <button class="btn primary" type="submit">Enviar mensagem</button>
+  </form>
+
+</main>
+<footer class="footer">
+  © 2025 VerdeLar — Loja de Departamento. Todos os direitos reservados.
+</footer>
+</body></html>
